@@ -4,7 +4,7 @@ All of my practical assignments for SEiP are stored here.
 
 ## Getting Started
 
-These instructions will get you a copy of the Maven project up and running on your local machine for development purposes.
+These instructions will get you a copy of the Maven project up and running in order to create a histogram chart from a grades txt file.
 Clone this repository by opening your Git Bash and entering the following command: ```git clone https://github.com/dimitra-karadima/SEiP2020_Assignments.git```
 
 **Note:** If the code is still not merged to the master branch, then you first need to get to the development branch to get the code:
@@ -34,6 +34,10 @@ A step by step series of examples that tell you how to get a development env run
 You can now change anything you want in the code, from the java files to the pom.xml files.
 With any little change there is a whole different program.
 
+## Dependencies
+The dependencies in the Maven project are:
+1. The parent named seip2020_practical_assignments.
+2. A Maven module named gradeshistogram.
 
 ## Deployment
 
