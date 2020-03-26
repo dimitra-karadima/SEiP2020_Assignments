@@ -32,8 +32,7 @@ public class HistogramGenerator {
 	  */
 	
 	public static void main(String[] args) {
-		//File path = new File(args[0]);
-		File path = new File("C://Users//Dimitra//Desktop//grades.txt");
+		File path = new File(args[0]);
 		int[] dataValues = readGrades(path);
 		generateChart(dataValues);
 	}
