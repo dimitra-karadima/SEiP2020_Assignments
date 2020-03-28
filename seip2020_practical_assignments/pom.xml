@@ -6,8 +6,8 @@
 	<artifactId>seip2020_practical_assignments</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Parent Module</name>
-	<description>This is a parent module hosting other modules under it.</description>
+	<name>Central Repository</name>
+	<description>This is a central repository hosting all of my SEiP assignments.</description>
 	<modules>
 		<module>gradeshistogram</module>
 	</modules>
