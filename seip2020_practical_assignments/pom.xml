@@ -10,6 +10,7 @@
 	<description>This is a central repository hosting all of my SEiP assignments.</description>
 	<modules>
 		<module>gradeshistogram</module>
+		<module>unittesting</module>
 	</modules>
 	<build>
 		<plugins>
