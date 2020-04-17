@@ -12,7 +12,7 @@ import java.util.Collection;
 import org.junit.Assert;
 
 @RunWith(Parameterized.class)
-public class MyMathTestParameterized {
+public class MyMathParameterizedTest {
 
 	@Parameter (value = 0)
 	public int n;
