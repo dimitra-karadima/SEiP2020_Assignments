@@ -12,6 +12,11 @@ public class ArithmeticOperationsTest {
 		a.divide(2, 0);
 	}
 	
+	@Test
+	public void testDivideWithNoZeroDenominator() {
+		a.divide(4,2);
+	}
+	
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
 	
@@ -37,10 +42,16 @@ public class ArithmeticOperationsTest {
 	}
 	
 	@Test
-	public void testMultiplyHugeNumbers() {
+	public void testMultiplyHugeNumber() {
 		thrown.expect(IllegalArgumentException.class);
 		a.multiply(2, Integer.MAX_VALUE);
 		thrown.expectMessage("The product does not fit in an Integer variable");
 	}
+	
+	@Test
+	public void testMultiplySmallNumbers() {
+		a.multiply(4, 5);
+	}
+	
 	
 }
