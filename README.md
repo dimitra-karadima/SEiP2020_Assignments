@@ -53,13 +53,13 @@ If you want to create a histogram based on a txt file you store grades, click [h
 
 If you want to do basic arithmetic operations, click [here](seip2020_practical_assignments/unittesting/README.md). The arithmetic operations return the correct result as they are tested for their functionality.
 
-##Generate Code Coverage
+## Generate Code Coverage
 
 In order to generate a report of the code coverage produced by JaCoCo execute the following Maven command : ```mvn clean package jacoco:report```
 
 The code coverage will be located in ```target/site/jacoco``` for each module of the project.
 
-##Continuous Integration service
+## Continuous Integration service
 
 This project utilizes the TravisCI services in order to test and build the project every commit pushed to this repository.
 
