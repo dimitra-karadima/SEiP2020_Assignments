@@ -9,11 +9,11 @@ public class FileIOTest {
 
 	FileIO f = new FileIO();
 	String resourcesPath= "src/test/resources/";
-	int[] expected = {1,2,3,4,5};
+	int[] expected = {2,3,4,5};
 	
 	@Test
 	public void testNormalCase() {
-		Assert.assertArrayEquals(expected, f.readFile(resourcesPath + "normal.txt"));
+		Assert.assertArrayEquals(expected, f.readFile(resourcesPath.concat("normal.txt")));
 	}
 	
 	@Rule
@@ -22,20 +22,20 @@ public class FileIOTest {
 	@Test
 	public void testEmptyFile(){
 		thrown.expect(IllegalArgumentException.class);
-		f.readFile(resourcesPath + "empty.txt");
+		f.readFile(resourcesPath.concat("empty.txt"));
 		thrown.expectMessage("Given file is empty");
 	}
 	
 	@Test
 	public void testWrongPath(){
 		thrown.expect(IllegalArgumentException.class);
-		f.readFile(resourcesPath + "wrong.txt");
+		f.readFile(resourcesPath.concat("wrong.txt"));
 		thrown.expectMessage("Input file does not exist");
 	}
 	
 	@Test
 	public void testReadFileContainsInvalidEntries() {
-		f.readFile(resourcesPath + "double.txt");
+		f.readFile(resourcesPath.concat("double.txt"));
 	}
 	
 }
