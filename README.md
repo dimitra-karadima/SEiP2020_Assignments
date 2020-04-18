@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/dimitra-karadima/SEiP2020_Assignments.svg?token=qqNB8JtSMr3RMpx7yqHb&branch=development)](https://travis-ci.com/dimitra-karadima/SEiP2020_Assignments)
+[![Build Status](https://travis-ci.com/dimitra-karadima/SEiP2020_Assignments.svg?token=qqNB8JtSMr3RMpx7yqHb&branch=master)](https://travis-ci.com/dimitra-karadima/SEiP2020_Assignments)
 # SEiP2020_Assignments
 
 All of my practical assignments for SEiP are stored here.
