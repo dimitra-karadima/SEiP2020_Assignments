@@ -12,12 +12,12 @@ public class ArithmeticOperationsTest {
 	
 	@Test (expected = ArithmeticException.class)
 	public void testDivideByZeroFails() {
-		Assert.assertEquals(2, a.divide(2, 0));
+		 a.divide(2, 0);
 	}
 	
 	@Test
 	public void testDivideWithNoZeroDenominator() {
-		a.divide(4,2);
+		Assert.assertEquals(2.0, a.divide(4.0, 2.0),0.001);
 	}
 	
 	@Rule
