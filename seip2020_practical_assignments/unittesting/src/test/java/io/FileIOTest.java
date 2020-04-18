@@ -10,6 +10,7 @@ public class FileIOTest {
 	FileIO f = new FileIO();
 	String resourcesPath= "src/test/resources/";
 	int[] expected = {2,3,4,5};
+	int[] expectedDouble = {1,3,5};
 	
 	@Test
 	public void testNormalCase() {
@@ -35,7 +36,7 @@ public class FileIOTest {
 	
 	@Test
 	public void testReadFileContainsInvalidEntries() {
-		f.readFile(resourcesPath.concat("double.txt"));
+		Assert.assertArrayEquals(expectedDouble,f.readFile(resourcesPath.concat("double.txt")));
 	}
 	
 }
