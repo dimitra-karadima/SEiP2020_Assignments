@@ -29,13 +29,6 @@ public class MyMathTest {
 	}
 	
 	@Test
-	public void testFactorialOfHugeNumber() {
-		thrown.expect(IllegalArgumentException.class);
-		m.factorial(1000);
-		thrown.expectMessage("Cannot calculate factorial of number more than 12");
-	}
-	
-	@Test
 	public void testPrimeOfInvalidInput() {
 		thrown.expect(IllegalArgumentException.class);
 		m.isPrime(0);
