@@ -1,15 +1,18 @@
 package math;
 
+import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+
 
 public class ArithmeticOperationsTest {
 	ArithmeticOperations a = new ArithmeticOperations();
 	
 	@Test (expected = ArithmeticException.class)
 	public void testDivideByZeroFails() {
-		a.divide(2, 0);
+		Assert.assertEquals(2, a.divide(2, 0));
 	}
 	
 	@Test
@@ -50,8 +53,17 @@ public class ArithmeticOperationsTest {
 	
 	@Test
 	public void testMultiplySmallNumbers() {
-		a.multiply(4, 5);
+		Assert.assertEquals(20,a.multiply(4, 5));
 	}
 	
+	@Test
+	public void testMultiplyWithZeroX() {
+		Assert.assertEquals(0, a.multiply(0, Integer.MAX_VALUE));
+	}
+	
+	@Test
+	public void testMultiplyWithZeroY() {
+		Assert.assertEquals(0, a.multiply(Integer.MAX_VALUE,0));
+	}
 	
 }
