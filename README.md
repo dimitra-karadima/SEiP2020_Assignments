@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/dimitra-karadima/SEiP2020_Assignments.svg?token=qqNB8JtSMr3RMpx7yqHb&branch=master)](https://travis-ci.com/dimitra-karadima/SEiP2020_Assignments)
 # SEiP2020_Assignments
 
 All of my practical assignments for SEiP are stored here.
@@ -37,7 +38,8 @@ With any little change there is a whole different program.
 ## Dependencies
 The dependencies in the Maven project are:
 1. The parent named seip2020_practical_assignments.
-2. A Maven module named gradeshistogram.
+2. A Maven module named [gradeshistogram](seip2020_practical_assignments/gradeshistogram/README.md).
+3. A Maven module named [unittesting](seip2020_practical_assignments/unittesting/README.md).
 
 ## Deployment
 
@@ -45,11 +47,24 @@ Now, if you want to run the project here is a step guide for you! We assume that
 1. Open Command Prompt.
 2. Navigate where you cloned the repository. There will be a folder named ```SEiP2020_Assignments```.
 3. Enter in this folder with: ```cd SEiP2020_Assignments```.
-3. Build the Maven project by: ```mvn install```
-4. Enter in the folder gradeshistogram/target with: ```cd gradeshistogram/target```.
-5. Run the program by entering in the command line: ```java -jar gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar``` and the path to the txt file you want to read. For example: ```java -jar gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar C://Temp//grades.txt```
+3. Build the Maven project by: ```mvn install``` or ```mvn package```
 
-The program will run and generate a histogram based on the folder you gave as an input.
+If you want to create a histogram based on a txt file you store grades, click [here](seip2020_practical_assignments/gradeshistogram/README.md).
+
+If you want to do basic arithmetic operations, click [here](seip2020_practical_assignments/unittesting/README.md). The arithmetic operations return the correct result as they are tested for their functionality.
+
+## Generate Code Coverage
+
+In order to generate a report of the code coverage produced by JaCoCo execute the following Maven command : ```mvn clean package jacoco:report```
+
+The code coverage will be located in ```target/site/jacoco``` for each module of the project.
+
+## Continuous Integration service
+
+This project utilizes the TravisCI services in order to test and build the project every commit pushed to this repository.
+
+The build badge that is placed in the first line of this README is updated in every commit.
+It can either be green or red, depending whether the build has passed or failed respectively.
 
 ## Built With
 
@@ -61,4 +76,4 @@ The program will run and generate a histogram based on the folder you gave as an
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/dimitra-karadima/SEiP2020_Assignments/blob/master/LICENSE) file for details
