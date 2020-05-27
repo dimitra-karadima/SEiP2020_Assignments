@@ -18,10 +18,11 @@ import java.util.regex.Pattern;
  */
 public class SourceCodeAnalyzer {
 	
+	private SourceFileReaderFactory fileReaderFactory = new SourceFileReaderFactory();
 	private SourceFileReader fileReader;
 	
 	public SourceCodeAnalyzer(String fileReaderType) {
-		this.fileReader = new SourceFileReader(fileReaderType);
+		fileReader = fileReaderFactory.createSourceFileReader(fileReaderType);
 	}
 		
 	public int calculateLOC(String filepath, String analyzerType) throws IOException {
