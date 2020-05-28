@@ -3,6 +3,13 @@ package codeanalyzer;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * This class implements the AnalyzerType interface
+ * and reads files with strcomp analysis type.
+ * @author Dimitra
+ *
+ */
+
 public class Strcomp implements AnalyzerType{
 
 	@Override

@@ -4,6 +4,13 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * This class implements the AnalyzerType interface
+ * and reads files with regex analysis type.
+ * @author Dimitra
+ *
+ */
+
 public class Regex implements AnalyzerType {
 	
 	@Override

@@ -2,6 +2,13 @@ package codeanalyzer;
 
 import java.io.IOException;
 
+/**
+ * This class implements the AnalyzerType interface
+ * and reads files with unknown analysis type.
+ * @author Dimitra
+ *
+ */
+
 public class NullAnalyzer implements AnalyzerType{
 	
 	@Override
