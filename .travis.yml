@@ -14,3 +14,14 @@ before_script:
 
 script: 
   - mvn clean package jacoco:report
+
+after_script:
+  -cd sourcecodeanalyzer\target
+  -java -jar sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ../src/test/resources/TestClass.java regex local ../src/main/resources/output_metrics_file csv
+  -cd ../src/main/resources/
+  -diff -w output_metrics_file.csv correct.csv | grep "^>"| wc -l
+  -if [ $? -eq 0 ]; then
+  -echo OK
+  -else
+  -echo FAIL
+  -fi
