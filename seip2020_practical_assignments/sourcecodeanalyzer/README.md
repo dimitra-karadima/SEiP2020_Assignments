@@ -16,7 +16,7 @@ The program will now run and create a file with the name you gave in the path yo
 
 #UML Diagram
 
-<img src="UML Diagram.png" alt="UML_Diagram"/>
+<img src="seip2020_practical_assignments/sourcecodeanalyzer/UML Diagram.png" alt="UML_Diagram"/>
 
 ##Design patterns
 
