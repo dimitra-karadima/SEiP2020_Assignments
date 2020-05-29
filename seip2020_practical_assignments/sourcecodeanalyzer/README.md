@@ -14,11 +14,11 @@ We assume that you already followed the steps shown in the corresponding section
 
 The program will now run and create a file with the name you gave in the path you also gave.
 
-#UML Diagram
+# UML Diagram
 
-<img src="seip2020_practical_assignments/sourcecodeanalyzer/UML Diagram.png" alt="UML_Diagram"/>
+<img src="/seip2020_practical_assignments/sourcecodeanalyzer/UML Diagram.png" alt="UML_Diagram"/>
 
-##Design patterns
+## Design patterns
 
 There were some design patterns used in this module and are show in the UML Diagram above.
 First of all the Factory on the Strategy pattern. It was used in all types(FileExporters,SourceCodeAnalyzers,SourceFileReaders). The idea for all 3 types were pretty much the same and it was that this would make all 3 types more easily extendible.
