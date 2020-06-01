@@ -40,6 +40,7 @@ The dependencies in the Maven project are:
 1. The parent named seip2020_practical_assignments.
 2. A Maven module named [gradeshistogram](seip2020_practical_assignments/gradeshistogram/README.md).
 3. A Maven module named [unittesting](seip2020_practical_assignments/unittesting/README.md).
+4. A Maven module name [sourcecodeanalyzer](seip2020_practical_assignments/sourcecodeanalyzer/README.md).
 
 ## Deployment
 
